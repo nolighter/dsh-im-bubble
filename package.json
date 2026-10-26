@@ -1,0 +1,38 @@
+{
+  "name": "dsh-im-bubble",
+  "version": "0.1.0",
+  "description": "DSH 插件：给 IM 通道加上主动分条发送的工具 im_say，让一条回复能拆成多个独立气泡；同时提供 im_targets / im_target_add 管理投递目标。",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-im",
+    "im",
+    "weixin",
+    "message",
+    "bubble"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
